@@ -1,4 +1,6 @@
 <?php
+print(
+$var);
 
   $var=   1;
 
