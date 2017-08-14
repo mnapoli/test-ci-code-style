@@ -1,3 +1,4 @@
-standard=PSR2
+#standard=PSR2
+standard=vendor/wizaplace/php-coding-standard/Wizaplace
 
 src/
