@@ -1,2 +1,2 @@
 # test-ci-code-style
-Just a test repository
+Just a test repository.
