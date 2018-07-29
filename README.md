@@ -2,4 +2,4 @@
 
 Just a test repository.
 
-Flip flap.
+Flop.
