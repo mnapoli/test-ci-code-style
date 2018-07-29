@@ -1,3 +1,3 @@
-# test-ci-code-styl
+# test-ci-code-style
 
 Just a test repository.
