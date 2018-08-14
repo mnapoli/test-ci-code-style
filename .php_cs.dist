@@ -1,0 +1,10 @@
+<?php
+
+$finder = \PhpCsFixer\Finder::create()
+    ->in('src')
+    ->in('tests')
+    ->name('*.php')
+;
+
+return \PhpCsFixer\Config::create()
+    ->setFinder($finder);
