@@ -1,0 +1,13 @@
+name: php-cs-fixer
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    # Job name is Greeting
+    name: php-cs-fixer
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: PHP Code Style Fixer (php-cs-fixer)
+        uses: StephaneBour/actions-php-cs-fixer@1.0
