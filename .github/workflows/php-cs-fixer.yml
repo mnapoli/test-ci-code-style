@@ -22,4 +22,4 @@ jobs:
           extensions: mbstring, intl, gd, xml, dom, json, fileinfo, curl, zip, iconv
       - uses: actions/checkout@master
       - run: composer install --prefer-dist
-      - run: ./vendor/bin/phpcs
+      - run: ./vendor/bin/phpcs src
