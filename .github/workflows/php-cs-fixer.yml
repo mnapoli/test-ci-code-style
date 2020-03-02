@@ -2,10 +2,8 @@ name: php-cs-fixer
 on: [push, pull_request]
 
 jobs:
-  build:
-    # Job name is Greeting
+  phpcsfixer:
     name: php-cs-fixer
-    # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -13,3 +11,9 @@ jobs:
         uses: OskarStark/php-cs-fixer-ga@2.16.1.2
         with:
           args: --diff --dry-run
+  phpcs:
+    name: phpcs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: docker://rtcamp/action-phpcs-code-review:v2.0.0
