@@ -15,5 +15,11 @@ jobs:
     name: phpcs
     runs-on: ubuntu-latest
     steps:
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v1
+        with:
+          php-version: '7.4'
+          extensions: mbstring, intl, gd, xml, dom, json, fileinfo, curl, zip, iconv
       - uses: actions/checkout@master
-      - uses: docker://rtcamp/action-phpcs-code-review:v2.0.0
+      - run: composer install --prefer-dist
+      - run: ./vendor/bin/phpcs
